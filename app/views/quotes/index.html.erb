@@ -1,8 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Quotes</h1>
 
-<table>
+<h1>Listing Quotes</h1>
+<div class="panel panel-primary">
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Author</th>
@@ -18,14 +19,14 @@
         <td><%= quote.author %></td>
         <td><%= quote.quote %></td>
         <td><%= quote.background %></td>
-        <td><%= link_to 'Show', quote %></td>
-        <td><%= link_to 'Edit', edit_quote_path(quote) %></td>
-        <td><%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="btn btn-primary btn-xs"><%= link_to 'Show', quote %></td>
+        <td class="btn btn-primary btn-xs"><%= link_to 'Edit', edit_quote_path(quote) %></td>
+        <td class="btn btn-danger btn-xs"><%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
+</div>
 <br>
 
-<%= link_to 'New Quote', new_quote_path %>
+<div class="btn btn-small btn-success"><%= link_to 'New Quote', new_quote_path %></div>
