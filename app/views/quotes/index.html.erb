@@ -16,9 +16,9 @@
   <tbody>
     <% @quotes.each do |quote| %>
       <tr>
-        <td><%= link_to quote.author, quote %></td>
-        <td><%= link_to quote.quote, quote %></td>
-        <td><%= link_to quote.background, quote %></td>
+        <td><%= link_to quote.author, quote, class: "cust-link" %></td>
+        <td><%= link_to quote.quote, quote, class: "cust-link" %></td>
+        <td><%= link_to quote.background, quote, class: "cust-link" %></td>
         <td><%= link_to 'Show', quote, class: "btn btn-primary btn-xs" %></td>
         <td><%= link_to 'Edit', edit_quote_path(quote), class: "btn btn-primary btn-xs" %></td>
         <td><%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-xs" %></td>

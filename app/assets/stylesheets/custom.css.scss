@@ -52,3 +52,26 @@ p {
   color: #fff;
   text-decoration: none;
 }
+
+/* Custom Classes */
+
+.cust-link {
+  background-color: none;
+  &:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  &:visited {
+    color: black;
+  }
+}
+
+.btn {
+    &:hover {
+    color: white;
+  }
+  &:visited {
+    color: white;
+  }
+}
