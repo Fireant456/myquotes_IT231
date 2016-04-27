@@ -13,5 +13,5 @@
     <%= @quote.background %>
   </div>
 </div>
-<div class="btn btn-primary btn-small"><%= link_to 'Edit', edit_quote_path(@quote) %></div> |
-<div class="btn btn-success btn-small"><%= link_to 'Back', quotes_path %></div>
+<%= link_to 'Edit', edit_quote_path(@quote), class: "btn btn-primary btn-small" %> |
+<%= link_to 'Back', quotes_path, class: "btn btn-success btn-small" %>

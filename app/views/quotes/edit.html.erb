@@ -2,5 +2,5 @@
 
 <%= render 'form' %>
 
-<div class="btn btn-primary btn-small"><%= link_to 'Show', @quote %></div> |
-<div class="btn btn-danger btn-small"><%= link_to 'Back', quotes_path %></div>
+<%= link_to 'Show', @quote, class: "btn btn-primary btn-small", data: { confirm: 'Are you sure you want to leave without saving?' } %> |
+<%= link_to 'Back', quotes_path, class: "btn btn-danger btn-small", data: { confirm: 'Are you sure you want to leave without saving?' } %>
